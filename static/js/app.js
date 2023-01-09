@@ -170,7 +170,7 @@ function buildBubbleChart(sample) {
 };
 
 // Function that updates dashboard when sample is changed
-function OptionChanged(item) { 
+function optionChanged(item) { 
 
     // Call all functions 
     buildMetadata(item);
