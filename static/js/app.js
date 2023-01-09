@@ -29,12 +29,13 @@ function init() {
             .property("value",id);
         });
 
-        // Set the first sample from the list to build the initial plots
+        // Set the first sample from the list
         let sample_one = names[0];
 
         // Log the value of sample_one
         console.log(sample_one);
 
+        // Build the initial plots
         buildMetadata(sample_one);
         buildBarChart(sample_one);
         buildBubbleChart(sample_one);
