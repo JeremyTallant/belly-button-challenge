@@ -66,7 +66,7 @@ function buildGaugeChart(sample) {
             value: washFrequency,
             domain: {x: [0,1], y: [0,1]},
             title: {
-                text: "Belly Button Washing Frequency"<br>"Scrubs per Week",
+                text: "Belly Button Washing Frequency\nScrubs per Week",
                 font: {color: "black", size: 16}
             },
             type: "indicator",
