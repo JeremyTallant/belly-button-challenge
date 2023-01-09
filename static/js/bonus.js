@@ -71,7 +71,7 @@ function buildGaugeChart(sample) {
             },
             type: "indicator",
             mode: "gauge+number",
-            guage: {
+            gauge: {
                 axis: {range: [0,10], tickmode: "linear", tick0: 2, dtick: 2},
                 bar: {color: "black"},
                 steps: [
