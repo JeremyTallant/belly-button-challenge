@@ -50,6 +50,9 @@ function buildMetadata(sample) {
         // Filter based on the value of the sample
         let value = metadata.filter(result => result.id == sample);
 
+        // Log the array of metadata objects after the have been filtered
+        console.log(value)
+
         // Get the first index from the array
         let valueData = value[0];
 
@@ -58,8 +61,14 @@ function buildMetadata(sample) {
 
         // Use Object.entries to add each key/value pair to the panel
         Object.entries(valueData).forEach(([key,value]) => {
+
+            // Log the individual key/value pairs as they are being appended to the metadata panel
+            console.log(key,value);
+            
             d3.select("#sample-metadata").append("h5").text(`${key}: ${value}`);
         });
+
     });
 
 }
+
