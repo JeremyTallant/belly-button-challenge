@@ -35,7 +35,10 @@ function init() {
         // Log the value of sample_one
         console.log(sample_one);
 
-        // Build the initial gauge chart
+        // Build the initial plots
+        buildMetadata(sample_one);
+        buildBarChart(sample_one);
+        buildBubbleChart(sample_one);
         buildGaugeChart(sample_one);
     });
 };
@@ -109,6 +112,9 @@ function optionChanged(value) {
 
     // Call function
     buildGaugeChart(value);
+    buildMetadata(value);
+    buildBarChart(value);
+    buildBubbleChart(value);
 };
 
 // Call the initialize function
