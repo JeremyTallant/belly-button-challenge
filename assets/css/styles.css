@@ -7,3 +7,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+p {
+    font-weight: bold;
+}
