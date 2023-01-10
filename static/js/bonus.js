@@ -3,9 +3,6 @@ d3.json(url).then(function(data) {
   console.log(data);
 });
 
-// Define the color scale for gauge chart
-let colorScale = d3.scaleLinear().domain([0,10]).range(["lightgreen", "darkgreen"]).interpolate(d3.interpolateHcl);
-
 // Initialize the dashboard at start up 
 function init() {
 
