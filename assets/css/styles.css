@@ -1,5 +1,5 @@
 #custom-bg {
-    background-image: url('assets/images/background.jpg');
+    background-image: url('assets/images/background.jpg')!important;
     -webkit-background-size: cover; 
     -moz-background-size: cover;
     -o-background-size: cover; 
