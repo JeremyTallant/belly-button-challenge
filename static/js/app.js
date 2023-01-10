@@ -39,7 +39,6 @@ function init() {
         buildMetadata(sample_one);
         buildBarChart(sample_one);
         buildBubbleChart(sample_one);
-        buildGaugeChart(sample_one);
 
     });
 };
