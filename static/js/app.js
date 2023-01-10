@@ -39,6 +39,7 @@ function init() {
         buildMetadata(sample_one);
         buildBarChart(sample_one);
         buildBubbleChart(sample_one);
+
     });
 };
 
@@ -180,6 +181,7 @@ function optionChanged(value) {
     buildMetadata(value);
     buildBarChart(value);
     buildBubbleChart(value);
+    buildGaugeChart(value);
 };
 
 // Call the initialize function

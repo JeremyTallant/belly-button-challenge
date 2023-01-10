@@ -36,9 +36,6 @@ function init() {
         console.log(sample_one);
 
         // Build the initial plots
-        buildMetadata(sample_one);
-        buildBarChart(sample_one);
-        buildBubbleChart(sample_one);
         buildGaugeChart(sample_one);
     });
 };
@@ -103,19 +100,3 @@ function buildGaugeChart(sample) {
         Plotly.newPlot("gauge", [trace2], layout)
     });
 };
-
-// Function that updates the gauge chart when sample is changed 
-function optionChanged(value) {
-
-    // Log the new value
-    console.log(value)
-
-    // Call function
-    buildGaugeChart(value);
-    buildMetadata(value);
-    buildBarChart(value);
-    buildBubbleChart(value);
-};
-
-// Call the initialize function
-init();
