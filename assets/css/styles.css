@@ -13,20 +13,8 @@ p {
 }
 
 .col-md-12.jumbotron.text-center {
-    position: relative;
-}
-
-.col-md-12.jumbotron.text-center::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: url('https://img.freepik.com/free-vector/virus-particles-interacting-with-antibody-molecules_52683-41602.jpg?w=2000&t=st=1673358537~exp=1673359137~hmac=41f7ee5e7995f311792c34e53eb9f035305313f7254bfa1b8ca907d43fcb22dc');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    transform: scaleY(-1);
-    z-index: -1;
-}
+}   
