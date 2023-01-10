@@ -100,3 +100,6 @@ function buildGaugeChart(sample) {
         Plotly.newPlot("gauge", [trace2], layout)
     });
 };
+
+// Call the initialize function
+init();
