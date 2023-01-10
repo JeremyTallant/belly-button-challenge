@@ -1,0 +1,9 @@
+#custom-bg {
+    background-image: url('assets/images/background.jpg');
+  -webkit-background-size: cover; 
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
