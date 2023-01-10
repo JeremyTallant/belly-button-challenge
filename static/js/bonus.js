@@ -102,4 +102,4 @@ function buildGaugeChart(sample) {
 };
 
 // Call the initialize function
-// init();
+init();
