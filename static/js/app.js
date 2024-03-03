@@ -87,9 +87,10 @@ function buildCharts(sample) {
 
 }
 
-// Function to handle the change event
 function optionChanged(newSample) {
     // Fetch new data each time a new sample is selected
     buildCharts(newSample);
     buildMetadata(newSample);
+    buildGaugeChart(newSample); // Ensure this is called to update the gauge chart
 }
+
