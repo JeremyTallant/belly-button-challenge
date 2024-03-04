@@ -6,12 +6,18 @@ d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1
         select.append("option").text(name).property("value", name);
     });
 
+    // Add event listener for the dropdown menu change
+    select.on("change", function () {
+        var newSample = d3.select(this).property("value");
+        optionChanged(newSample);
+    });
+
     // Initialize the page with the first sample
     var firstSample = data.names[0];
     buildCharts(firstSample);
     buildMetadata(firstSample);
     // Initialize the page with the first sample for gauge chart
-    buildGaugeChart(firstSample); // 
+    buildGaugeChart(firstSample); // Presuming you have this function defined elsewhere
 });
 
 // Function to build the metadata panel
@@ -32,7 +38,7 @@ function buildMetadata(sample) {
     });
 }
 
-// Function to build the bar chart and other charts if you extend functionality
+// Function to build the charts
 function buildCharts(sample) {
     d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json").then((data) => {
         var samples = data.samples;
@@ -84,13 +90,12 @@ function buildCharts(sample) {
 
         Plotly.newPlot('bubble', bubbleData, bubbleLayout);
     });
-
 }
 
+// Function to handle changes in the dropdown selection
 function optionChanged(newSample) {
-    // Fetch new data each time a new sample is selected
+    console.log("New sample selected:", newSample);
     buildCharts(newSample);
     buildMetadata(newSample);
     buildGaugeChart(newSample); // Ensure this is called to update the gauge chart
 }
-

@@ -74,9 +74,3 @@ function buildGaugeChart(sample) {
 }
 
 
-
-
-
-function optionChanged(newSample) {
-  buildGaugeChart(newSample); // Make sure this function is called here
-}
