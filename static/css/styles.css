@@ -33,10 +33,29 @@ body {
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
-
     .jumbotron h1,
     .col text-center h1 {
         font-size: 24px;
         /* Smaller text on smaller screens */
     }
+}
+
+/* Add spacing below the gauge chart container for separation */
+#bubble {
+    margin-top: 80px; /* Adjust the value as needed */
+}
+
+/* Ensures equal height for chart containers */
+.chart-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensures the charts themselves have a minimum height */
+#bar, #gauge {
+    min-height: 500px; /* Adjust based on your needs */
+    /* Ensures that the divs take up the same amount of space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
