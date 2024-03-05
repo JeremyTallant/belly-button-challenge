@@ -27,6 +27,7 @@ The data for this project originates from an intriguing study conducted by Hulcr
 3. **Demographic Information Panel**: Shows the selected individual's demographic information as key-value pairs.
 ![image](images/demographics.png) 
 4. **Gauge Chart**: Plots the weekly washing frequency of the individual. 
+![image](images/gauge.png) 
 ## How to Use
 * Select a Test Subject ID No. from the dropdown menu to update the visualizations with data specific to that individual.
 * Hover over the charts to see additional details about the bacteria cultures and their frequencies. 
