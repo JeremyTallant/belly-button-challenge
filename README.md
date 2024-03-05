@@ -9,6 +9,6 @@ Explore the fascinating world of microbial ecosystems with our interactive dashb
 * Bootstrap for responsive design. 
 ## Features
 1. **Horizontal Bar Chart**: Displays the top 10 OTUs found in the individual selected from the dropdown menu. 
-	* Values: `sample_values`
-	* Labels: `otu_ids`
-	* Hovertext: `otu_labels`
+* Values: `sample_values`
+* Labels: `otu_ids`
+* Hovertext: `otu_labels`
