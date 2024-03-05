@@ -12,7 +12,8 @@ The data for this project originates from an intriguing study conducted by Hulcr
 * Bootstrap for responsive design. 
 ## Features
 ### Horizontal Bar Chart
-Displays the top 10 OTUs found in the individual selected from the dropdown menu. 
+Displays the top 10 OTUs found in the individual selected from the dropdown menu.
+ 
 	- Values: `sample_values`
 	- Labels: `otu_ids`
 	- Hovertext: `otu_labels`
