@@ -11,18 +11,19 @@ The data for this project originates from an intriguing study conducted by Hulcr
 * Plotly.js for creating interactive visualizations (bar chart, bubble chart, and gauge chart).
 * Bootstrap for responsive design. 
 ## Features
-![image](images/barchart.png)
+
 1. **Horizontal Bar Chart**: Displays the top 10 OTUs found in the individual selected from the dropdown menu. 
 	* Values: `sample_values`
 	* Labels: `otu_ids`
 	* Hovertext: `otu_labels`
+![image](images/barchart.png)
 
-![image](images/bubble.png)
 2. **Bubble Chart**: Displays each sample.
 	* X values: `otu_ids`
 	* Y values: `sample_values`
 	* Marker size: `sample_values`
 	* Text values: `otu_labels`
+![image](images/bubble.png)
 3. **Demographic Information Panel**: Shows the selected individual's demographic information as key-value pairs. 
 4. **Gauge Chart**: Plots the weekly washing frequency of the individual. 
 ## How to Use
