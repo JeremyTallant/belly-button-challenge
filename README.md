@@ -15,7 +15,9 @@ The data for this project originates from an intriguing study conducted by Hulcr
 	* Values: `sample_values`
 	* Labels: `otu_ids`
 	* Hovertext: `otu_labels`
+
 ![image](images/barchart.png)
+
 2. **Bubble Chart**: Displays each sample.
 	* X values: `otu_ids`
 	* Y values: `sample_values`
