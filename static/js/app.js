@@ -17,7 +17,7 @@ d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1
     buildCharts(firstSample);
     buildMetadata(firstSample);
     // Initialize the page with the first sample for gauge chart
-    buildGaugeChart(firstSample); // Presuming you have this function defined elsewhere
+    buildGaugeChart(firstSample); 
 });
 
 // Function to build the metadata panel
@@ -97,5 +97,5 @@ function optionChanged(newSample) {
     console.log("New sample selected:", newSample);
     buildCharts(newSample);
     buildMetadata(newSample);
-    buildGaugeChart(newSample); // Ensure this is called to update the gauge chart
+    buildGaugeChart(newSample); 
 }

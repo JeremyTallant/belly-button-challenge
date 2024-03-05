@@ -42,7 +42,7 @@ body {
 
 /* Add spacing below the gauge chart container for separation */
 #bubble {
-    margin-top: 80px; /* Adjust the value as needed */
+    margin-top: 10px; /* Adjust the value as needed */
 }
 
 /* Ensures equal height for chart containers */
@@ -51,11 +51,19 @@ body {
     flex-direction: column;
 }
 
-/* Ensures the charts themselves have a minimum height */
-#bar, #gauge {
-    min-height: 500px; /* Adjust based on your needs */
-    /* Ensures that the divs take up the same amount of space */
+/* Parent container holding both charts */
+.charts-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    flex-direction: row; /* Use row for side-by-side layout */
+    justify-content: space-around; /* Adjust spacing around items */
+    align-items: stretch; /* Stretch items to fill the container height */
+  }
+  
+  /* Individual chart containers (cards) */
+  .chart-card {
+    flex: 1; /* Allows each card to grow equally */
+    /* Add additional styling as needed */
+    padding: 10px; /* Optional: Adds some padding inside the cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds some shadow for depth */
+  }
+  
